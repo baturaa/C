@@ -1,0 +1,257 @@
+#include <stdio.h>
+#include <math.h>
+#include <wchar.h>
+#include <locale.h>
+#include <time.h>
+#include <stdlib.h>
+void main(){
+
+    // if 1
+    // signed char number;
+    // scanf("%hhu", &number);
+    // // v1
+    // if (number >0) ++number;
+
+    // // v2
+    // (number > 0) ? ++number : number;
+    // printf("%hhu", number);
+
+
+    // if2
+    // signed char number;
+    // scanf("%hhd", &number);
+    // if(number>0) ++number; else number-= 2; 
+    // (number>0) ? ++number  : (number -= 2);
+    // printf("%hhd", number);
+
+
+
+    // if 3
+    // signed char number;
+    // scanf("%hhd", &number);
+
+    // // v1
+    // if (number>0) ++number;
+    // else if(number<0)number -=2;
+    // else number = 10;
+
+    // // v2
+    // number += (number > 0) ? 1 : (number<0) ? -2 : 10;
+    // printf("%hhd", number);
+
+    
+
+    // if 4
+    // signed char a,b,c;
+    // scanf("%hhd %hhd %hhd", &a, &b, &c);
+    // printf("%hhd", (a>0) + (b>0) + (c > 0));
+
+    // if 5
+    // signed char a,b,c;
+    // scanf("%hhd %hhd %hhd", &a, &b, &c);
+    // printf("Положительных%hhd\t Отрицательных%hhd\n", (a>0) + (b>0) + (c > 0) , (a<0) + (b<0) + (c < 0));
+
+    // if 6
+    // signed char a,b;
+    // scanf("%hhd %hhd", &a, &b);
+    // if(a>b) printf("%hhd", a);
+    // else printf("%hhd", b);
+
+    // (a>b) ? a : b;
+    // printf("%hhd", a,b);
+
+
+    // if 7
+    // signed char a,b;
+    // scanf("%hhd %hhd", &a ,&b);
+    // printf("Порядковый номер = %hhd", (a>b) ? 1:2);
+
+    // if8
+    // signed char a,b;
+    // scanf("%hhd %hhd", &a ,&b);
+    // printf("Большее число = %hhd\nМеньшее число = %hhd", (a>b) ? a:b , (a>b)? b:a);
+
+
+    // if 9
+    // signed char a,b;
+    // scanf("%hhd %hhd", &a, &b);
+    // if (a>b) {
+    //     a = a+b;
+    //     b = a-b;
+    //     a = a-b;
+    // }
+
+    // printf("%hhd %hhd", a = (a>b) ? (a=a+b, b=a-b , a= a-b) : a,b); 
+
+
+
+    // if 10
+    // signed char a,b,sum;
+    // scanf("%hhd %hhd", &a, &b);
+    // if (a!=b) a=b += a;
+    // else a=b=0;
+    // printf("%hhd", a,b);
+
+
+    // if 11
+    // unsigned char a,b;
+    // scanf("%hhd %hhd", &a, &b);
+    // if(a>b) b=a;
+    // else if(b>a) a=b;
+    // else a=b=0;
+    // printf("%hhd", a,b);
+
+
+    // if 12
+    // unsigned char a,b,c,min;
+    // scanf("%hhd %hhd %hhd", &a, &b, &c);
+    // if(a<b && a<c) printf("Наименьшее = %hhd",b);
+    // else if (b<a && b<c)  printf("Наименьшее = %hhd",b);
+    // else if (c<a &&c<b)  printf("Наименьшее = %hhd",c);
+    // else puts("Наименьших 2 или более =");
+
+    // printf("Наименьшее %s", (a<b && a<c) ? "a" : (b<a && b<c) ? "b" : (c<a && c<b) ? "c" : " возможно более двух");
+
+
+
+    // if 13
+    // unsigned char a,b,c;
+    // scanf("%hhd %hhd %hhd", &a, &b, &c);
+    // if (a<=b && b<=c || c<=b && b<=a) printf("%hhd",b);
+    // else if (b<=a && b <=c || c<=a && a<=b) printf("%hhd, a");
+    // else printf("%hhd",c);
+
+    // printf("Наименьшее %s", (a<=b && b<=c || c<b && b<=a) ? "b" : (b<=a && b <=c || c<=a && a<=b) ? "a" : "c");
+
+
+    // if 14
+    // unsigned char number1,number2,number3;
+    // scanf("%hhu %hhu %hhu", &number1, &number2, &number3);
+    // if (number1<number2 && number1<number3) printf("Наименьшее=%hhd", number1);
+    // else if (number2<number1 && number2<number3) printf("Наименьшее=%hhd", number2);
+    // else if (number3<number1 && number3<number2) printf("Наименьшее=%hhd", number3);
+    // if (number1>number2 && number1>number3) printf("Наибольшее=%hhd", number1);
+    // else if (number2>number1 && number2>number3) printf("Наибольшее=%hhd", number2);
+    // else if (number3>number1 && number3>number2) printf("Наибольшее=%hhd", number3);
+
+    // (number1 == number2 || number1 == number3  || number2 == number3) ? printf("Более одного наименьшего или наибольшего\n") : printf("Наименьшее %hhu\tНаибольшее %hhu\n", ((number1 < number2 && number1 < number3) ? number1 : (number2 < number1 && number2 < number3) ? number2 : number3), (number1 > number2 && number1 > number3) ? number1 : (number2 > number1 && number2 > number3) ? number2 : number3);
+
+
+
+    // if 15
+    // int a,b,c;
+    // scanf("%i %i %i", &a, &b, &c);
+    // if(c<a && c<b) printf("%i", a+b);
+    // else if(b<c && b<a) printf("%i", c+a);
+    // else printf("%i", b+c);
+
+    // printf("%i", (c<a && c<b) ?a+b : (b<c && b<a) ?c+a : b+c);
+
+
+
+    // if 16
+    // int a,b,c;
+    // scanf("%i %i %i", &a,&b,&c);
+    // if(a<b && b<c){
+    //     printf("%i", a*=2 , b*=2, c*=2);
+    // }
+    // else a=-a, b=-b, c=-c;
+    // printf("%i %i %i", a,b,c);
+    // (a<b && b<c) ? (a*=2, b*=2, c*=2)  : (a=-a, b=-b, c=-c) ;
+    // printf("%i\t%i\t%i\t",a,b,c);
+
+
+    // if 17
+    // int a,b,c;
+    // scanf("%i %i %i", &a, &b, &c);
+    // if (a<b && b<c || a>b && b>c) printf("%i %i %i", a*=2, b*=2, c*=2);
+    // else a=-a, b=-b, c=-c;
+    // printf("%i %i %i", a,b,c);
+
+    // (a<b && b<c || a>b && b>c) ? (a*=2, b*=2, c*=2)  : (a*=-1, b*=-1, c*=-1) ;
+    // printf("%i\t%i\t%i\t",a,b,c);
+
+
+    // if 18
+    // int a,b,c;
+    // scanf("%i %i %i", &a, &b, &c);
+    // if (b==a) printf("%i", 3);
+    // else if (a==c) printf("%i", 2);
+    // else printf("%i",1);
+
+    // (b==a) ?3 : (a==c) ?2 :1 ;
+
+    // if 19
+    // int a,b,c,d;
+    // scanf("%i %i %i %i", &a, &b, &c, &d);
+    // printf("Отличное число %s", (a==b && a==c) ? "4" : (a==b && a==d) ? "3" : (a==c && a==d) ? "2" : (b == c && c == d) ? "1" : "более одного");    printf("%i", a,b,c,d);
+
+
+    // if 20
+    // int a,b,c;
+    // scanf("%i %i %i", &a, &b, &c);
+    // printf("%c",(fabs(b-a) > fabs(c-a)) ? 'C' : 'B');
+
+
+    // if 21
+    // int x,y;
+    // scanf("%i %i", &x, &y);
+    // printf("%i", (x==0 && y==0)? 0 : (y==0)? 1 :(x==0)?2:3);
+
+
+    // if 22
+    // int x,y;
+    // scanf("%i %i", &x, &y);
+    // printf("%i", (x>0 && y>0) ? 1:(x<0 && y>0) ?2 : (x<0 && y<0)? 3 : 4);
+
+    // if 23
+    // int x1,x2,x3, y1,y2,y3;
+    // scanf("%i %i %i %i %i %i", &x1, &y1, &x2, &y2,&x3,&y3);
+    // printf("%i %i", (x1==x2)?x3 :(x1==x3)?x2 : x1, (y1==y2)?y3 : (y1==y3)?y2 : y1);
+
+    // if 24
+    // int x;
+    // scanf("%i", &x);
+    // printf("%i", (x>0) ? 2 * sin(x) : 6-x);
+
+
+    // if 25
+    // int x;
+    // scanf("%i",&x);
+    // printf("%i", (x<-2 || x>2)?2*x : -3*x);
+
+    // if 26
+    // int x;
+    // scanf("%i", &x);
+    // printf("%i",(x<=0)?-x : (0<x && x<2)? x * x:4);
+
+
+    // if 27
+    // int x;
+    // scanf("%i", &x);
+    // printf("f(x) = %i\n", (x < 0) ? 0 : (((int)floor(x)) % 2 == 0) ? 1 : -1);
+
+    // if 28
+    // int year;
+    // scanf("%i", &year);
+    // printf("%i", (year/4==0 && year /100 !=0 || year / 400 ==0)?366 : 365);
+
+
+    // if 29
+    // int a;
+    // scanf("%i", &a);
+    // if (a > 0) printf("Положительное");
+    // else if (a < 0) printf("Отрицательное");
+    // else printf("0");
+    // if (a % 2 == 0) printf(" чётное ");
+    // else printf(" нечётное ");
+    // printf(" число ");
+    // printf("%s", (a>0)?"положительное" : (a<0)? "Отрицательное" :0);
+    // printf("%s", a%2==0?"четное" : "нечетное");
+
+
+    // if 30
+    // int number;
+    // scanf("%i", &number);
+    // printf("%s %s", (number % 2 == 0)? "Четное" : "нечетное", (number >= 1 && number <= 9) ? "однозначное" : (number >= 10 && number <= 99) ? "двузначное" : "трехзначное");
+}
