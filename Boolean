@@ -1,0 +1,231 @@
+#include <stdio.h>
+#include <math.h>
+#include <wchar.h>
+#include <locale.h>
+#include <time.h>
+#include <stdlib.h>
+void main(){
+
+    //2
+    // int a;
+    // scanf("%i", &a);
+    // printf("%i", a % 2 != 0);
+
+    // 3
+    // int a;
+    // scanf("%i", &a);
+    // printf("%i", a % 2 == 0);
+
+    // 4
+    // int a,b;
+    // scanf("%i %i", &a, &b);
+    // printf("%i", a>2 && b<=3 ); 
+
+    // 5
+    // int a,b;
+    // scanf("%i %i", &a, &b);
+    // printf("%i", a >= 2 || b < -2 );
+
+
+    // 6
+    // int a,b,c;
+    // scanf("%i %i %i", &a, &b, &c);
+    // printf("%i", a<b && b<c );
+
+
+    // 7
+    // int a,b,c;
+    // scanf("%i %i %i", &a, &b, &c);
+    // printf("%i", a<b && b<c || a>b && b>c);
+
+    // 8
+    // int a,b;
+    // scanf("%i %i", &a, &b );
+    // printf("%i", a&1 && b&1 );
+
+
+    // 9
+    // int a,b;
+    // scanf("%i %i", &a, &b);
+    // printf("%i", a % 2 !=0 || b % 2 !=0 )
+
+    // 10
+    // int a,b;
+    // scanf("%i %i", &a, &b);
+    // printf("%i", a %2 !=0 || b%2==0 && a %2==0 || b %2 !=0);
+
+
+    // 11
+    // int a,b;
+    // scanf("%i %i", &a, &b);
+    // printf("%i", a % 2==0 || a % 2 ==0 && b % 2 !=0 || a % 2 !=0);
+
+    // 12
+    // int a,b,c;
+    // scanf("%i %i %i", &a, &b, &c);
+    // printf("%i", a>0 && b>0 && c>0);
+
+    // 13
+    // int a,b,c;
+    // scanf("%i %i %i" , &a, &b , &c);
+    // printf("%i", a>0 || b > 0 || c>0);
+
+    // 14
+    // int a,b,c;
+    // scanf("%i %i %i" , &a, &b , &c);
+    // printf("%i", (a > 0) + (b > 0) + (c > 0) == 1);
+
+    // 15
+    // int a,b,c;
+    // scanf("%i %i %i", &a, &b, &c);
+    // printf("%i", (a > 0) + (b > 0) + (c > 0) == 2);
+
+    // 16
+    // unsigned int a;
+    // scanf("%u", &a);
+    // printf("%u", a >9 && a<100 && a%2 ==0 );
+
+    // 17
+    //  unsigned int a;
+    // scanf("%u", &a);
+    // printf("%u", a >=100 && a<=999 && a%2 !=0 );
+
+    // 18
+    // int a,b,c;
+    // scanf("%i %i %i", &a, &b, &c);
+    // printf("%i", a==b || b==c || a==c);
+
+    // 19
+    // int a,b,c;
+    // scanf("%i %i %i", &a, &b, &c);
+    // printf("%i", a == -b || b == -c || a==-c);
+
+    // 20
+    // int a,b,c, number;
+    // scanf("%i" , &number);
+    // a=number/100;
+    // b=number%100/10;
+    // c = number % 10;
+    // printf("%i", a !=b && b!=c && a!=c);
+
+
+    // 21
+    // int a,b,c, number;
+    // scanf("%i" , &number);
+    // a = number/100;
+    // b = number%100/10;
+    // c = number % 10;
+    // printf("%i", a<b && b<c);
+
+    // 22
+    // int a,b,c, number;
+    // scanf("%i" , &number);
+    // a = number/100;
+    // b = number%100/10;
+    // c = number % 10;
+    // printf("%i", a<b && b<c || a>b && a>c);
+    
+    // 23
+    // int a,b,c,d, number;
+    // scanf("%i" , &number);
+    // a = number/1000;
+    // b = number%1000/100;
+    // c = number % 100/10;
+    // d = a%10;
+    // printf("%i", a==d || b==c );
+
+
+    // 24
+    // int a,b,c,D;
+    // scanf("%i %i %i", &a,&b,&c);
+    // D=b*b-4*a*c;
+    // printf("%i", D>=0);
+
+    // 25
+    // signed int x,y;
+    // scanf("%d %i", &x, &y);
+    // printf("%d", x<0 && y >0);
+
+    // 26
+    // signed int x,y;
+    // scanf("%d %i", &x, &y);
+    // printf("%d", x>0 && y < 0);
+
+    // 27
+    // signed int x,y;
+    // scanf("%d %i", &x, &y);
+    // printf("%d", x>0 && y !=0);
+
+    // 28
+    // signed int x,y;
+    // scanf("%d %i", &x, &y);
+    // printf("%d", x>0 && y>0 || x<0 && y<0);
+
+    // 29
+    // int x,y,x1,y1,x2,y2;
+    // scanf("%i %i %i %i %i %i", &x, &y, &x1, &y2, &x2, &y2);
+    // printf("%i", x>x1 && x<x2 &&y<y1 && y>y2);
+
+    // 30
+    // int a,b,c;
+    // scanf("%i %i %i", &a, &b, &c);
+    // printf("%i", a==b && b==c&& a==c);
+
+    // 31
+    // int a,b,c;
+    // scanf("%i %i %i", &a, &b ,&c);
+    // printf("%i", a==b && a!=c  || b==c && b!=a);
+
+    // 32
+    // int a,b,c;
+    // scanf("%i %i %i" ,&a, &b, &c);
+    // printf("%i", ((a * a == b * b + c * c) || (b * b == a * a + c * c) || (c * c == a * a + b * b)));
+
+    // 33
+    // int a,b,c;
+    // scanf("%i %i %i", &a, &b, &c);
+    // printf("%i", a+b>c && a+c>b && b+c>a);
+
+    // 34
+    // int x,y,z;
+    // scanf("%i %i", &x,&y);
+    // z= x+y;
+    // printf("%i", z % 2 ==0);
+
+
+    // 35
+    // int x1,x2,y1,y2, z,a;
+    // scanf("%i %i %i %i", &x1, &y1, &x2, &y2);
+    // z = x1+x2;
+    // a = y1+y2;
+    // printf("%i", x1+y1 %2 ==0 && x2+y2 %2 ==0 || (x1+y1) %2 !=0 && (x2+y2 ) %2 !=0);
+
+
+    // 36
+    // int x1,y1,x2,y2;
+    // scanf("%i %i %i %i" , &x1, &y1, &x2, &y2);
+    // printf("%i", (x1 !=x2 && y1 == y2) || (x1==x2 && y1 !=y2));
+
+
+    // 37
+    // int x1,y1,x2,y2;
+    // scanf("%i %i %i %i" , &x1, &y1, &x2, &y2);
+    // printf("%i", fabs(x2-x1) <= 1 && fabs(y2-y1) <=1);
+
+
+    // 38
+    // int x1,y1,x2,y2;
+    // scanf("%i %i %i %i" , &x1, &y1, &x2, &y2);
+    // printf("%i", pow(x2-x1, 2) == pow(y2-y1, 2));
+
+
+    // 39
+    // int x1,y1,x2,y2;
+    // scanf("%i %i %i %i" , &x1, &y1, &x2, &y2);
+    // printf("%i", (x1==x2) || (y1==y2) || ((x2 - x1) * (x2 - x1) == (y2 - y1) * (y2 - y1)));
+
+    // 40
+    //  int x1,y1,x2,y2;
+    // scanf("%i %i %i %i" , &x1, &y1, &x2, &y2);
+    // printf("%i", fabs(x2-x1) == 2 && fabs(y2-y1) == 1 || fabs(y2-y1) == 2 && fabs(x2-x1) == 1);
+}
