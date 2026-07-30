@@ -1,0 +1,172 @@
+#include <stdio.h>
+#include <math.h>
+#include <wchar.h>
+#include <locale.h>
+#include <time.h>
+#include <stdlib.h>
+void main(){
+ // int 1
+    // unsigned int L;
+    // scanf("%u", &L);
+    // printf("%u", L/100);
+
+
+    // int 2
+    // unsigned int M;
+    // scanf("%u", &M);
+    // printf("%u", M/1000);
+
+
+    // int 3
+    // unsigned int k;
+    // scanf("%u", &k);
+    // printf("%u" , k/1024);
+
+
+    // int 4
+    // unsigned int a,b;
+    // scanf("%u %u", &a, &b);
+    // printf("%u", a/b);
+
+    // int 5
+    // unsigned int a,b;
+    // scanf("%u %u", &a, &b);
+    // printf("%u", a%b);
+
+    // int 6
+    // unsigned int a;
+    // scanf("%u", &a);
+    // printf("%u %u", a/10, a%10);
+
+    // int 7
+    // unsigned int a, left, right;
+    // scanf("%u", &a);
+    // left = a/10;
+    // right = a%10;
+    // printf("Сумма=%u, Произведение =%u", left+right, left*right);
+
+    // int 8
+    // unsigned int a,b,c;
+    // scanf("%u", &a);
+    // b=a/10;
+    // c=a%10;
+    // printf("%u", c *10+ b);
+
+    // int 9
+    // unsigned int a;
+    // scanf("%u", &a);
+    // printf("%u", a/100);
+
+
+    // int 10
+    // unsigned int a;
+    // scanf("%u", &a);
+    // printf("%u %u", a %10, (a/10)%10);
+
+    // int 11
+    // unsigned int a,b,c,d;
+    // scanf("%u",&a);
+    // b= a/100;
+    // c = a % 100;
+    // d = (a/10)%10;
+    // printf("%u %u", b+c+d, b*d*c);
+
+
+    // int 12
+    // unsigned int b;
+    // scanf("%u", &b);
+    // printf("%u", (b%10*100) + (b%100/10*10)+ (b/100));
+
+    // int 13
+    // unsigned int a;
+    // scanf("%u", &a);
+    // printf("%u", a%100 *10 +a/100);
+
+    // int 14
+    // unsigned int a;
+    // scanf("%u", &a);
+    // printf("%u", a%10*100+a/10);
+
+    // int 15
+    // unsigned int a;
+    // scanf("%u" , &a);
+    // printf("%u", a%100/10*100+a/100*10+a%10);
+
+    // int 16
+    // unsigned int a;
+    // scanf("%u", &a);
+    // printf("%u", a/100*100+a%10*10+a/10%10);
+
+    // int 17
+    // unsigned int a;
+    // scanf("%u", &a);
+    // printf("%u", a%1000/100);
+
+    // int 18
+    // unsigned int a;
+    // scanf("%u", &a);
+    // printf("%u", a%10000/1000);
+
+    // int 19
+    // unsigned int a;
+    // scanf("%u", &a);
+    // printf("%u", a/60);
+
+    // int 20
+    // unsigned int a;
+    // scanf("%u", &a);
+    // printf("%u", a/3600);
+
+    // int 21
+    // unsigned int a;
+    // scanf("%u", &a);
+    // printf("%u", a/60%10);
+
+    // int 22
+    // unsigned int a;
+    // scanf("%u", &a);
+    // printf("%u", a/3600%10);
+
+    // int 23
+    // unsigned int a;
+    // scanf("%u", &a);
+    // printf("%u", a%3600/60);
+
+    // int 24
+    // unsigned int k;
+    // scanf("%u", &k);
+    // printf("%u", k%7);
+
+    // int 25
+    // unsigned int k;
+    // scanf("%u", &k);
+    // printf("%u", (k+3)%7);
+
+    // int 26
+    // unsigned int k;
+    // scanf("%u", &k);
+    // printf("%u", k%7+1);
+
+    // int 27
+    // unsigned int k;
+    // scanf("%u", &k);
+    // printf("%u", k%7+5);
+
+
+    // int 28
+    // unsigned int k,N;
+    // scanf("%u %u", &k, &N);
+    // printf("%u", (k+N-2)%7+1);
+
+    // int 29
+    // unsigned a,b,c, totalSquares;
+    // scanf("%u %u %u", &a, &b, &c);
+    // printf("%u %u", a/c, b/c);
+    // totalSquares = ((a/c) * (b/c));
+    // printf("%u", a*b-((a/c)*(b/c)) * (c*c));
+
+    // int 30
+    // unsigned int a;
+    // scanf("%u", &a);
+    // printf("%u", (a+99)/100);
+}
