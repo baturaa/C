@@ -1,0 +1,604 @@
+#include <stdio.h>
+#include <math.h>
+#include <wchar.h>
+#include <locale.h>
+#include <time.h>
+#include <stdlib.h>
+void main(){
+
+  // switch 1
+    // int day_week;
+    // scanf("%i", &day_week);
+    // switch(day_week)
+    // {
+    //     case 1: puts("Понедельник"); break;
+    //     case 2: puts("Вторник"); break;
+    //     case 3: puts("Среда"); break;
+    //     case 4: puts("Четверг"); break;
+    //     case 5: puts("Пятница"); break;
+    //     case 6: puts("Суббота"); break;
+    //     case 7: puts("Воскресенье"); break;
+    // }
+
+    // enum DAYS_OF_WEEK {Monday = 1, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday};
+    // enum DAYS_OF_WEEK day;
+    // scanf("%i", &day);
+    // switch(day)
+    // {
+    //     case  Monday: puts("Понедельник"); break;
+    //     case Tuesday: puts("Понедельник"); break;
+    //     case Wednesday: puts("Понедельник"); break;
+    //     case Thursday: puts("Понедельник"); break;
+    //     case Friday: puts("Понедельник"); break;
+    //     case Saturday: puts("Понедельник"); break;
+    //     case Sunday: puts("Понедельник"); break;
+    // }
+
+
+    // switch 2
+    // int k;
+    // scanf("%i", &k);
+    // switch (k)
+    // {
+    // case 1: puts ("Плохо"); break;
+    // case 2: puts ("неудовлетворительно"); break;
+    // case 3: puts ("удовлетворительно"); break;
+    // case 4: puts ("хорошо"); break;
+    // case 5: puts ("отлично"); break;
+    // default: puts("ошибка");break;
+    // }
+
+    // enum k {Плохо = 1, неудовлетворительно, удовлетворительно, хорошо, отлично, ошибка};
+    // enum k marks;
+    // scanf("%i", &marks);
+    // switch (marks)
+    // {
+    //     case Плохо : puts("Плохо"); break;
+    //     case неудовлетворительно : puts("неудовлетворительно"); break;
+    //     case удовлетворительно : puts("удовлетворительно"); break;
+    //     case хорошо : puts("хорошо"); break;
+    //     case отлично : puts("отлично"); break;
+    //     default: puts("ошибка"); break;
+    // }
+
+
+    // switch 3
+
+
+    // int month;
+    // scanf("%i", &month);
+    // switch (month)
+    // {
+    // case 1 : case 2: case 12: puts("зима"); break;
+    // case 3 : case 4 : case 5 : puts("весна"); break;
+    // case 6: case 7: case 8: puts("лето"); break;
+    // case 9 : case 10: case 11: puts("осень"); break;
+    // default: puts("ошибка");
+    // }
+
+    // enum MONTH {Januanry = 1, February, March, April, May, June, July, August, September, October, November, December};
+    // enum MONTH month;
+    // scanf("%i", &month);
+    // switch(month)
+    // {
+    //     case December : case Januanry : case February : puts ("Winter"); break;
+    //     case March : case April : case May : puts ("Spring"); break;
+    //     case June : case July : case August : puts ("Summer"); break;
+    //     case September : case October : case November : puts ("Fall"); break;
+    // } 
+
+
+    //switch 4
+    // int days;
+    // scanf("%i", &days);
+    // switch (days)
+    // {
+    // case 1: puts("31"); break;
+    // case 2: puts("28"); break;
+    // case 3: puts("31"); break;
+    // case 4: puts("30"); break;
+    // case 5: puts("30"); break;
+    // case 6: puts("30"); break;
+    // case 7: puts("31"); break;
+    // case 8: puts("31"); break;
+    // case 9: puts("30"); break;
+    // case 10: puts("31"); break;
+    // case 11: puts("30"); break;
+    // case 12: puts("31"); break;
+    // default: puts("ошибка");
+    // }
+
+    // enum MONTH {Januanry = 1, February, March, April, May, June, July, August, September, October, November, December};
+    // enum MONTH month;
+    // scanf("%i", &month);
+    // switch(month)
+    // {
+    //     case April: case May: case June:case September: case November: puts("30"); break;
+    //     case Januanry: case March: case July: case August : case October : case December: puts("31"); break;
+    //     case February: puts("28");break;
+    //     default: puts("ошибка");
+
+    // } 
+
+    // switch 5
+    // int a,b,x;
+    // scanf("%i %i %i", &a, &b, &x);
+
+    // switch (x)
+    // {
+    // case 1: printf("%s", a+b);break;
+    // case 2: printf("%s", a-b);break;
+    // case 3: printf("%s", a*b);break;
+    // case 4: printf("%s", a/b);break;
+    // default: printf("Ошибка");break;
+    // }
+
+    // signed char letter;
+    // float A,B;
+    // puts("Арифметические действия над числами 1 — сложение, 2 — вычитание, 3 — умножение, 4 — деление\nВведите два числа A,B и цифру действия (Пример 1 + 2): ");
+    // if (scanf("%f %c %f", &A, &letter, &B) != 3 || B == 0) { Error_input: puts("Ошибка ввода"); return; }
+    // switch(letter)
+    // {
+    //     case '+': printf("%.2f + %.2f = %.2f\n", A, B, A + B); break;
+    //     case '-': printf("%.2f - %.2f = %.2f\n", A, B, A - B); break;
+    //     case '*': printf("%.2f %.2f = %.2f\n", A, B, A * B); break;
+    //     case '/': printf("%.2f / %.2f = %.2f\n", A, B, A / B); break;
+    //     default: goto Error_input;
+    // }
+
+
+    // switch 6
+    // int l;
+    // float n;
+    // scanf("%i %f", &l, &n);
+    // switch (l)
+    // {
+    // case 1: printf("%f", n*0,1);break;
+    // case 2: printf("%f", n*1000);break;
+    // case 3: printf("%f", n *1);break;
+    // case 4: printf("%f", n*0,001);break;
+    // case 5: printf("%f", n*0,01);break;
+    // default: printf("error");break;
+    // }
+
+
+    // enum length{decimetr = 1, kilometr, metr, millimetr, cantimentr};
+    // enum length LENGTH;
+    // float n;
+    // scanf("%i %f", &LENGTH, &n);
+    // switch (LENGTH)
+    // {
+    // case decimetr: printf("%.2f", n *0,1);break;
+    // case kilometr: printf("%.2f", n * 1000);break;
+    // case metr: printf("%.2f",n *1);break;
+    // case millimetr: printf("%.2f",n *0,001);break;
+    // case cantimentr: printf("%.2f",n *0,01);break;
+    // default: printf("error");break;
+    // }
+
+
+
+
+    // switch 7
+    // int m;
+    // float n;
+    // scanf("%i %f", &m, &n);
+    // switch (m)
+    // {
+    // case 1: printf("%f", n ); break;
+    // case 2: printf("%f", n * 0,000001); break;
+    // case 3: printf("%f", n *0,001); break;
+    // case 4: printf("%f", n *1000); break;
+    // case 5: printf("%f", n *100); break;
+    // default:printf("error");break;
+    // }
+
+
+    // enum massa{kilogramm = 1, miligramm,gram, tona, centner};
+    // enum massa MASSA;
+    // float n;
+    // scanf("%i %f", &MASSA, &n);
+    // switch (MASSA)
+    // {
+    // case kilogramm: printf("%.2f", n *0,1);break;
+    // case miligramm: printf("%.2f",n * 0,000001);break;
+    // case gram: printf("%.2f", n *0,001);break;
+    // case tona: printf("%.2f", n *1000);break;
+    // case centner: printf("%.2f", n *100);break;
+    // default: printf("error");break;
+    // }
+
+
+
+    // switch 8
+//      int M,D;
+//     scanf("%i %i", &M, &D);
+//     if (D > 1) D--; else {
+//         if (M == 1) D = 31, M = 12; else {
+//             switch(--M)
+//             {
+//                 case 2: D = 28; break;
+//                 case 4: case 6: case 9: case 11: D = 30; break;
+//                 default: D = 31; break;
+
+//             }
+            
+//         }
+       
+//     }
+//   printf("Предыдущая дата: %hhu число %hhu месяца\n", D, M);
+
+//   switch 9
+// unsigned char D, M;
+//     puts("Вывести следующую дату невисокосного года\nВведите D день, M месяц: ");
+//     if (scanf("%hhu %hhu", &D, &M) != 2 || D < 1 || D > 31 || M < 1 || M > 12) { puts("Ошибка ввода"); return; }
+//     switch(M)
+//     {
+//         case 2: if (D >= 28) D = 0; break;
+//         case 4: case 6: case 9: case 11: if (D >= 30) D = 0; break;
+//         default: if (D >= 31) D = 0; break;
+//     }
+//     if (D == 0) M = (M == 12) ? 1 : M + 1;
+//     printf("Следующая дата: %hhu число %hhu месяца\n", ++D, M);
+
+
+
+// switch 10
+ 
+//     setlocale(LC_ALL,"");
+//     wchar_t C;
+    
+//     signed char N;
+//     scanf("%hhd %lc", &N, &C);
+//     switch (C)
+//     {
+//     case 1: C = (C == L'С') ? L'З' : (C == L'З') ? L'Ю' : (C == L'Ю') ? L'В' : L'С'; break;
+//     case -1: C = (C == L'С') ? L'В': (C == L'З') ? L'С': (C == L'Ю') ? L'З' : L'Ю'; break;
+//     case 0: break;
+//     default:
+//         break;
+//     }
+// printf("Новая позиция %s\n", (C == L'С') ? "Север" : (C == L'З') ? "Запад" : (C == L'В') ? "Восток" : (C == L'Ю') ? "Юг" : "Ошибка местоположения");
+
+  
+    // setlocale(LC_ALL,"");
+    // enum Command { Forward = 0, L = 1, R = -1 };
+    // enum Command N;
+    // wchar_t C;
+    // puts("Робот может перемещаться в четырех направлениях («С» — север, «З» — запад, «Ю» — юг, «В» — восток) и принимать три цифровые команды: 0 — продолжать движение, 1 — поворот налево, −1 — поворот направо\nВведите исходное C направление и N команду: ");
+    // if (scanf("%lc %hhd", &C, &N) != 2) { Error_input: puts("Ошибка ввода"); return; }
+    // switch(N)
+    // {
+    //     case Forward: puts("Продолжение движения"); break;
+    //     case L: C = (C == L'С') ? L'З' : (C == L'З') ? L'Ю' : (C == L'Ю') ? L'В' : L'С'; break;
+    //     case R: C = (C == L'С') ? L'В': (C == L'З') ? L'С': (C == L'Ю') ? L'З' : L'Ю'; break;
+    //     default: goto Error_input;
+    // }
+    // printf("Новая позиция %s\n", (C == L'С') ? "Север" : (C == L'З') ? "Запад" : (C == L'В') ? "Восток" : (C == L'Ю') ? "Юг" : "Ошибка местоположения");
+    
+
+
+    // setlocale(LC_ALL,"");
+    // int N;
+    // char C;
+    // puts("Робот может перемещаться в четырех направлениях («N» — North, «W» — West, «S» — South, «E» — East) и принимать три цифровые команды: 0 — продолжать движение, 1 — поворот налево, −1 — поворот направо\nВведите исходное C направление и N команду: ");
+    // if (scanf("%i %c", &N, &C) != 2) { Error_input: puts("Ошибка ввода"); return; }
+    // switch (N)
+    // {
+    // case 0: puts("Продолжение движения"); break;
+    // case 1: C = (C == 'N') ? 'W' : (C == 'W') ? 'S' : (C == 'S') ? 'E' : 'N'; break;
+    // case -1: C = (C == 'N') ? 'E' : (C == 'W') ? 'N' : (C == 'S') ? 'W' : 'S'; break;
+    // default: goto Error_input;
+    // }
+    //  printf("Новая позиция: %s\n", (C == 'N') ? "North" : (C == 'W') ? "West" : (C == 'E') ? "East" : (C == 'S') ? "South" : "Ошибка местоположения");
+
+
+        // 11
+    //     int N1,N2;
+    //     char C;
+    //     puts("Робот может перемещаться в четырех направлениях («С» — север, «З» — запад, «Ю» — юг, «В» — восток) и принимать три цифровые команды: 0 — продолжать движение, 1 — поворот налево, −1 — поворот направо\nВведите исходное C направление и N команду: ");
+    //     if (scanf("%i %i %c", &N1, &N2, &C) != 3) { Error_input: puts("Ошибка ввода"); return; }
+    //     switch (N1)
+    //     {
+    //     case 1: C = (C == 'N') ? 'W' : (C == 'W') ? 'S' : (C == 'S') ? 'E' : 'N'; break;
+    //     case 2: C=( C =='N')? 'S' : (C == 'W')? 'E' : (C == 'S') ? 'N' : 'W'; break;
+    //     case -1: C = (C == 'N') ? 'E' : (C == 'W') ? 'N' : (C == 'S') ? 'W' : 'S'; break;
+    //     default: goto Error_input;
+    // }
+    //     switch(N2){
+    //     case 1: C = (C == 'N') ? 'W' : (C == 'W') ? 'S' : (C == 'S') ? 'E' : 'N'; break;
+    //     case 2: C=( C =='N')? 'S' : (C == 'W')? 'E' : (C == 'S') ? 'N' : 'W'; break;
+    //     case -1: C = (C == 'N') ? 'E' : (C == 'W') ? 'N' : (C == 'S') ? 'W' : 'S'; break;
+    //     default: goto Error_input;
+    //     }
+    //     printf("Новая позиция: %s\n", (C == 'N') ? "North" : (C == 'W') ? "West" : (C == 'E') ? "East" : (C == 'S') ? "South" : "Ошибка местоположения");
+
+
+
+    // 12
+    // enum SWITCH_VARIANT {R=1,D,L,S};
+    // enum SWITCH_VARIANT tmp;
+    // const float PI = 3.14f;
+    // float value=0;
+    // scanf("%i %f", &tmp, &value);
+    // switch(tmp){
+    //     case R: break;
+    //     case D: value /=2; break;
+    //     case L: value= value/2/PI;break;
+    //     case S: value= sqrt(value/PI);break;
+    //     default: printf("Error"); break;
+    // }
+    // printf("R = %f\nD = %f\nL = %f\nS = %f", value, 2 *  value, PI * 2 * value, PI * value * value);
+
+
+    // 13
+//     enum SWITCH_VARIANT {A=1,C,H,S};
+//     enum SWITCH_VARIANT tmp;
+//     const float PI = 3.14f;
+//     float c = 0;
+//     float value=0;
+//     scanf("%i %f", &tmp, &value);
+//     switch(tmp){
+//         case A: break;
+//         case C: value /= sqrt(2); break;
+//         case H: value = value * sqrt(2); break;
+//         case S: value = sqrt(value); break;
+//         default: printf("Error"); break;
+//     }
+//     c = value * sqrt(2);
+//     printf("A = %f\nC = %f\nH = %f\nS = %f", value,c,c/2,c * c/2);
+
+
+    // 14
+    // enum SWITCH_VARIANT {A=1,R1,R2,S};
+    // enum SWITCH_VARIANT tmp;
+    // float a=0;
+    // scanf("%i %f", &tmp, &a);
+    // switch(tmp){
+    //     case A: break;
+    //     case R1: a = a / (sqrt(3) / 6); break;
+    //     case R2: a = a / (sqrt(3) / 6) / 2; break;
+    //     case S: a = sqrt((4 * a) / sqrt(3)); break;
+    //     default: printf("Error"); break;
+    // }
+
+    // printf("A = %f\nR1 = %f\nR2 = %f\nS = %f", a, a * (sqrt(3) / 6), 2 * a * (sqrt(3) / 6), a * a * sqrt(3) / 4);
+
+
+
+    // 15
+    // int N,M;
+    // scanf("%i %i", &N, &M);
+    // switch(N){
+    //     case 6 : printf("шестерка");break;
+    //     case 7 : printf("семерка");break;
+    //     case 8 : printf("восьмерка");break;
+    //     case 9 : printf("девятка");break;
+    //     case 10 : printf("десятка");break;
+    //     case 11 : printf("валет");break;
+    //     case 12: printf("дама");break;
+    //     case 13: printf("король");break;
+    //     case 14: printf("туз");break;
+    //     default: printf("Error"); break;
+    // }
+
+    // switch(M){
+    //     case 1 : printf("пики"); break;
+    //     case 2 : printf("трефы"); break;
+    //     case 3 : printf("бубны"); break;
+    //     case 4 : printf("червы"); break;
+    // }
+
+    // 16
+    // int number = 0;
+    // printf("Введите число (20-69): ");
+    // scanf("%i", &number);
+
+    // int tens = number/10;
+    // int ones = number % 10;
+    // switch (tens)
+    // {
+    // case 2: printf("двадцать");break;
+    // case 3: printf("тридцать");break;
+    // case 4: printf("сорок");break;
+    // case 5: printf("пятьдесят");break;
+    // case 6: printf("шестьдесят");break;
+    // default:printf("error");break;
+    // }
+    //  switch (ones) {
+    //     case 1: printf(" один"); break;
+    //     case 2: printf(" два"); break;
+    //     case 3: printf(" три"); break;
+    //     case 4: printf(" четыре"); break;
+    //     case 5: printf(" пять"); break;
+    //     case 6: printf(" шесть"); break;
+    //     case 7: printf(" семь"); break;
+    //     case 8: printf(" восемь"); break;
+    //     case 9: printf(" девять"); break;
+    //     default:printf("error");break;
+    // }
+
+
+ 
+    // 17
+//     int number = 0;
+//     printf("Введите число (10-40): ");
+//     scanf("%i", &number);
+
+//     int tens = number / 10;
+//     int ones = number % 10;
+
+// if (tens == 1 && ones >= 1) {
+//     switch (ones) {
+//         case 1: printf("одиннадцать "); break;
+//         case 2: printf("двенадцать "); break;
+//         case 3: printf("тринадцать "); break;
+//         case 4: printf("четырнадцать "); break;
+//         case 5: printf("пятнадцать "); break;
+//         case 6: printf("шестнадцать "); break;
+//         case 7: printf("семнадцать "); break;   
+//         case 8: printf("восемнадцать "); break;
+//         case 9: printf("девятнадцать "); break;
+//         default: printf("error"); break;
+//     }
+// } else {
+//     switch (tens) {
+//         case 1: printf("десять "); break;
+//         case 2: printf("двадцать "); break;
+//         case 3: printf("тридцать "); break;
+//         case 4: printf("сорок "); break;
+//         default: printf("error"); break;
+//     }
+
+//     if (ones != 0) {
+//         switch (ones) {
+//             case 1: printf("одно "); break;
+//             case 2: printf("два "); break;
+//             case 3: printf("три "); break;
+//             case 4: printf("четыре "); break;
+//             case 5: printf("пять "); break;
+//             case 6: printf("шесть "); break;
+//             case 7: printf("семь "); break;
+//             case 8: printf("восемь "); break;
+//             case 9: printf("девять "); break;
+//             default: printf("error"); break;
+//         }
+//     }
+// }
+
+
+// if (tens == 1) {
+//     printf("учебных заданий");
+// } else {
+//     switch (ones) {
+//         case 1: printf("учебное задание"); break;
+//         case 2: case 3: case 4: printf("учебных задания"); break; 
+//         case 5: case 6: case 7: case 8: case 9: printf("учебных заданий"); break;
+//         case 0:printf("учебных заданий"); break; 
+//         default: printf("error"); break;
+//     }
+// }
+
+//     int number;
+//     printf("Введите число (100-999): ");
+//     scanf("%i", &number);
+//     int hundreds=number/100;
+//     int tens = (number % 100) / 10;  
+//     int ones= number%10;
+
+//    switch (hundreds)
+//    {
+//     case 1:printf("сто ");break;
+//     case 2:printf("двести ");break;
+//     case 3:printf("триста ");break;
+//     case 4:printf("четыриста ");break;
+//     case 5:printf("пятьсот ");break;
+//     case 6:printf("шестьсот ");break;
+//     case 7:printf("семьсот ");break;
+//     case 8:printf("восемьсот ");break;
+//     case 9:printf("девятсот ");break;
+//     default:printf("error ");break;
+//    }
+// if (tens == 1 ) {
+//     switch (ones) {
+//         case 0: printf("десять ");break;
+//         case 1: printf("одиннадцать "); break;
+//         case 2: printf("двенадцать "); break;
+//         case 3: printf("тринадцать "); break;
+//         case 4: printf("четырнадцать "); break;
+//         case 5: printf("пятнадцать "); break;
+//         case 6: printf("шестнадцать "); break;
+//         case 7: printf("семнадцать "); break;   
+//         case 8: printf("восемнадцать "); break;
+//         case 9: printf("девятнадцать "); break;
+//         default: printf("error"); break;
+//     }
+// } else {
+//     switch (tens) {
+//         case 1: printf("десять "); break;
+//         case 2: printf("двадцать "); break;
+//         case 3: printf("тридцать "); break;
+//         case 4: printf("сорок "); break;
+//         case 5: printf("пятьдесят "); break;
+//         case 6: printf("шестьдесят "); break;
+//         case 7: printf("семьдесят "); break;
+//         case 8: printf("восемьдесят "); break;
+//         case 9: printf("девяносто "); break;
+//         default: printf("error"); break;
+//     }
+
+//     if (ones != 0) {
+//         switch (ones) {
+//             case 1: printf("одно "); break;
+//             case 2: printf("два "); break;
+//             case 3: printf("три "); break;
+//             case 4: printf("четыре "); break;
+//             case 5: printf("пять "); break;
+//             case 6: printf("шесть "); break;
+//             case 7: printf("семь "); break;
+//             case 8: printf("восемь "); break;
+//             case 9: printf("девять "); break;
+//             default: printf("error"); break;
+//         }
+//     }
+// }
+
+    // 19
+
+    // enum colors{зеленый, красный, желтый, белый, черный};
+    // enum animals{Крысы = 1, коровы,тигр,заец, дракон, змея, лошадь,овца,обезьяна,курица,собака,свинья};
+    // enum colors COLORS;
+    // enum animals ANIMALS;
+    // int year;
+    // int cycle;
+    // puts("введите год = ");
+    // scanf("%i %i", &COLORS ,&year);
+    // cycle = (year-1984)%60;
+    // cycle=ANIMALS/12;
+    // ANIMALS=COLORS%5;
+    // switch (COLORS)
+    // {
+    //     case 1: printf("зеленый "); break;
+    //     case 2: printf("красный "); break;
+    //     case 3: printf("желтый ");  break;
+    //     case 4: printf("белый ");   break;
+    //     case 5: printf("черный ");  break;
+    //     default: printf("error");break;
+    // }
+    // switch(ANIMALS) {
+    // case 1 : printf("Крысы ");break;
+    // case 2 : printf("коровы ");break;
+    // case 3 : printf("тигр ");break;
+    // case 4 : printf("заяц ");break;
+    // case 5 : printf("дракон ");break;
+    // case 6 : printf("змея ");break;
+    // case 7 : printf("лошадь ");break;
+    // case 8 : printf("овца");break;
+    // case 9 : printf("обезьяна ");break;
+    // case 10 : printf("курица ");break;
+    // case 11 : printf("собака ");break;
+    // case 12 : printf("свинья ");break;
+    // default: printf("error");break;
+    // }
+        
+
+    // 20
+
+    // int d, m;
+    // printf("Введите день и месяц: ");
+    // scanf("%d %d", &d, &m);
+
+    // if((m == 1  && d >= 20) || (m == 2  && d <= 18)) printf("Водолей\n");
+    // else if ((m == 2  && d >= 19) || (m == 3  && d <= 20)) printf("Рыбы\n");
+    // else if ((m == 3  && d >= 21) || (m == 4  && d <= 19)) printf("Овен\n");
+    // else if ((m == 4  && d >= 20) || (m == 5  && d <= 20)) printf("Телец\n");
+    // else if ((m == 5  && d >= 21) || (m == 6  && d <= 21)) printf("Близнецы\n");
+    // else if ((m == 6  && d >= 22) || (m == 7  && d <= 22)) printf("Рак\n");
+    // else if ((m == 7  && d >= 23) || (m == 8  && d <= 22)) printf("Лев\n");
+    // else if ((m == 8  && d >= 23) || (m == 9  && d <= 22)) printf("Дева\n");
+    // else if ((m == 9  && d >= 23) || (m == 10 && d <= 22)) printf("Весы\n");
+    // else if ((m == 10 && d >= 23) || (m == 11 && d <= 22)) printf("Скорпион\n");
+    // else if ((m == 11 && d >= 23) || (m == 12 && d <= 21)) printf("Стрелец\n");
+    // else if ((m == 12 && d >= 22) || (m == 1  && d <= 19)) printf("Козерог\n");
+    // else printf("Неверная дата\n");
+}
