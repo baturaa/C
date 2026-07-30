@@ -1,0 +1,202 @@
+#include <stdio.h>
+#include <math.h>
+#include <wchar.h>
+#include <locale.h>
+#include <time.h>
+#include <stdlib.h>
+void main(){
+
+// array 1
+    // srand(time(NULL));
+    // const size_t N = 10;
+    // float array[N]={};
+    // float sum = 0;
+    // for(size_t i = 0; i<N; i++){
+    //     array[i] = rand() %10 + (float)(rand()%10)/10;
+    //     printf("%i число: %.2f\n", i+1, array[i]);
+    //     sum+=array[i];
+    // }
+    // printf("Summ is %.2f", sum);
+
+    // 2
+    // float array[10];
+    // float proizvedenie=1;
+    // for (size_t i=0; i<10; i++){
+    //     scanf("%f", &array[i]);
+    //     proizvedenie *= array[i];
+    // }
+    // printf("Proizvedenie=%f", proizvedenie);
+
+
+    // 3
+    // int a[10];
+    // int sum = 0;
+    // for (int i = 0; i < 10; i++) {
+    //     scanf("%d", &a[i]);
+    //     sum += a[i];
+    // }
+
+    // printf("Среднее арифмитическое = %.2f\n", sum / 10.0);
+
+    // 4
+    // size_t N;
+    // scanf("%zu", &N);
+    // float array[N] = {};
+    // float proizvedenie = 1;
+    // float sum = 0;
+
+    // for(size_t i=0; i<N; i++){
+    //     scanf("%f", &array[i]);
+    //     sum+=array[i];
+    //     proizvedenie *= array[i];
+    // }
+    // printf("Сумма=%.2f\n", sum);
+    // printf("Произведение=%.2f\n", proizvedenie);
+
+
+    // 5
+    // int sum = 0;
+    // size_t N;
+    // scanf("%zu", &N);
+    // float array[N];
+    // for(size_t i=0; i<N; i++){
+    //     array[i] = (float) (rand() % 10 + (float)(rand() % 100)/100);
+    // }
+    // for(size_t i=0; i<N;i++){
+    //     sum += (int)array[i];
+    //     printf("%i\t%i\n",i+1,(int)array[i]);
+    // }
+
+    // printf("Сумма = %i", sum);
+
+    // srand(time(NULL));
+    // int a = 0;
+    // while(a++<=40){
+    // printf("%f\n", (float)(rand()% 21-10) + (float)(rand() % 100)/100);
+    // }
+
+
+    // 6
+    // float proizvedenie = 1;
+    // size_t N;
+    // scanf("%zu", &N);
+    // for(size_t i=0; i<N; i++){
+    //     float num = (float)(rand() % 100)/100;
+    //     proizvedenie *= num;
+    //     printf("%i\t%f\n", i+1, num);
+    // }
+    // printf("Произведение = %f", proizvedenie);
+// 7
+//    srand(time(NULL));
+//     int sum = 0;
+//     int N;
+//     scanf("%i", &N);
+//     for(size_t i=0; i<N;i++){
+//         float tmp = (float)(rand() % 10) + (float)((rand() % 10) / 10 > 5 ? 1 : 0);
+//         printf("%.1f\t", tmp);
+//         sum += (int)tmp;
+//     }
+//     printf("%i\n", sum);
+
+
+    // special task
+    // srand(time(NULL));
+    // const int SIZE = 4;
+    // int array[SIZE]={};
+    // int arr[SIZE]={};
+    // int correct=0;
+    // for(size_t i = 0; i<SIZE;i++){
+    //     array[i] = rand()%10;
+    //     printf("%i\t", array[i]);
+    // }
+    // puts("♦\n");
+    // while(!correct){
+    // for(size_t i=0; i<SIZE; i++){
+    //     puts("введите значение");
+    //     scanf("%i", &arr[i]);
+    // }
+    // }
+    // for(size_t i=0; i<SIZE; i++){
+    //     printf("%i",arr[i]);
+    // }
+
+    // for(size_t i=0; i<SIZE;i++){
+    //     if(arr[i]==array[i]){
+    //         puts("правильно");
+    //     }
+    //     else{
+    //         puts("неправильно");
+    //     }
+    // }
+
+
+    // 8
+    // int N;
+    // scanf("%i", &N);
+    // int arr[N];
+    // int sum = 0;
+    // for(size_t i=0; i<N; i++){
+    //     scanf("%i", &arr[i]);
+
+    //     if(arr[i]%2==0){
+    //         printf("%i\n", arr[i]);
+    //         sum++;
+    //     }
+    // }
+    // printf("количество = %i\n", sum);
+
+
+    // 9
+    // int N;
+    // scanf("%i", &N);
+    // int arr[N];
+    // int sum = 0;
+    
+    // for(size_t i=0; i<N;i++){
+    //     scanf("%i", &arr[i]);
+
+    //     if(arr[i] % 2 !=0){
+    //           printf("%i\n", arr[i]);
+    //           sum++;
+    //     }
+    // }
+
+    // printf("Сумма = %i\n", sum);
+
+    // 10
+    // int N;
+    // scanf("%i", &N);
+    // int arr[N];
+    // for(size_t i=0; i<N; i++){
+    //     scanf("%i", &arr[i]);
+
+    //     if(arr[i]>0){
+    //          puts("true\n");
+    //          return;
+    //     }
+    //     else{
+    //         puts("false\n");
+    //     }
+    // }
+
+
+    // 11
+    // int N,K;
+    // scanf("%i %i", &N, &K);
+    // int array[N];
+    // for(size_t i = 0; i<N; i++){
+    //     scanf("%i", &array[i]);
+    //     if(array[i]<K){
+    //         puts("True");
+    //         return;
+    //     }
+    // }
+    // puts("false");
+
+
+    // 12
+//    for(int i = 0, number = 1; number !=0; i++){
+//     scanf("%i", &number);
+//     if(number == 0) printf("%i", i);
+//    }
+}
