@@ -1,0 +1,388 @@
+#include <stdio.h>
+#include <math.h>
+#include <wchar.h>
+#include <locale.h>
+#include <time.h>
+#include <stdlib.h>
+void main(){
+    // Begin 1
+    // float a = 0;
+    // puts("Введите стороны а:");
+    // scanf("%f" , &a);
+    // printf("P=%2.f\n" , a*4);
+
+    // Begin2 
+    // float a = 0;
+    // puts("Введите стороны а: ");
+    // scanf("%f", &a);
+    // printf("S=%2.f\n" , a*a);
+    // printf("S=%2.f\n" , pow(a, 2));
+
+
+    // begin 3
+    // float a = 0;
+    // float b = 0;
+    // puts("Введите стороны");
+    // scanf("%f %f", &a, &b);
+    // printf("P=%2.f\t S=%2.f\n", 2*( a + b ), a*b);
+
+
+    // begin 4
+    // const float pi=3.14f;
+    // float d = 0;
+    // puts("Введите число");
+    // scanf("%f", &d);
+    // printf("L=%2.f", pi*d);
+
+
+    // begin 5
+    // float a = 0;
+    // puts("Введите стороны");
+    //  scanf("%f", &a);
+    // printf("V=%2.f\t S=%2.f\n", a*a*a, 6*a*a);
+
+    // begin 6
+    // float a = 0;
+    // float b = 0;
+    // float c =0;
+    // puts("Введите значение");
+    // scanf("%f %f %f" , &a, &b, &c);
+    // printf("v=%2.f\t S=%2.f\n", a*b*c, 2*(a*b + b*c + a*c));
+
+    // begin 7
+    // const float pi = 3.14f;
+    // float R = 0;
+    // puts("Введите знаечние");
+    // scanf("%f",&R);
+    // printf("L=%2.f\t S=%2.f\n", 2*pi*R, pi * R*R);
+
+    // BEGIN 8
+    // float a = 0;
+    // float b = 0;
+    // puts("Введите значение");
+    // scanf("%f %f", &a, &b);
+    // printf("\"Среднее арифмитическое=\"%.2f\t", (a+b)/2);
+
+    // BEGIN 9
+    // float a = 0;
+    // float b = 0;
+    // puts("Введите значение");
+    // scanf("%f %f", &a, &b);
+    // printf("\"Квадратный корень = \"%.2f\t", sqrt(a*b));
+
+    // begin 10
+    // float a = 0;
+    // float b = 0;
+    // puts("Введите значение");
+    // scanf("%f %f", &a, &b);
+    // printf("\"Сумма = %.2f\t Разность = %.2f\t Произведение = %.2f\t Квадрат = %.2f\t", a+b, a-b, a*a, sqrt(a*b));
+
+    // Begin 10
+    // float a,b;
+    // fputs("Найти сумму, разность, произведение и частное их квадратов\nВведите два не нулевых числа a, b: ", stdout);
+    // scanf("%f %f", &a, &b);
+    // // 1 Variant
+    // printf("a + b = %.2f\ta - b = %.2f\ta * b = %.2f\ta / b = %.2f\n", a * a + b * b, a * a - b * b, (a * a) * (b * b), (a * a) / (b * b));
+    // // 2 Variant (Math.h needed -lm)
+    // printf("a + b = %.2f\ta - b = %.2f\ta * b = %.2f\ta / b = %.2f\n", pow(a,2) + pow(b,2), pow(a,2) - pow(b,2), pow(a,2) * pow(b,2), pow(a,2) / pow(b,2));
+
+    // begin 11
+    // float a = 0;
+    // float b = 0;
+    // puts("Введите значение");
+    // scanf("%f %f", &a, &b);
+    // printf("\"Сумма = %.2f\t Разность = %.2f\t Произведение = %.2f\t Квадрат = %.2f\t", fabs(a) + fabs(b), fabs(a) - fabs(b), fabs(a) * fabs(b), fabs(a) / fabs(b));
+
+    // begin 12
+    // float a = 0;
+    // float b = 0;
+    // float c = 0;
+    // puts("Введите a b");
+    // scanf("%f %f", &a , &b);
+    // c=sqrt(pow(a,2) + pow(b,2));
+    // printf("Гипотенуза = %.2f\t\n Периметр = %.2f", c, a+b+c);
+
+
+
+    // begin 13
+    // const float pi = 3.14f;
+    // float R1 = 0;
+    // float R2 = 0;
+    // float S1 = 0;
+    // float S2 = 0;
+    // float S3 = 0;
+    // puts("Введите число");
+    // scanf("%f %f ", &R1, &R2 );
+    // S1 = pi * sqrt(R1);
+    // S2 = pi * sqrt(R2);
+    // S3 = S1 - S2;
+    // printf("S1=%.2f\t\n S2=%.2f\t\n S3=%.2f", S1, S2, S3);
+
+  
+    // begin14
+    // const float pi = 3.14f;
+    // float L = 0;
+    // float R = 0;
+    // float S = 0;
+    // puts("Введите значение");
+    // scanf("%f", &L);
+    // R = L / (2*pi);
+    // S = pi * R * R;  
+    // printf("R=%.2f\tS =%.2f", R, S);
+
+
+    // begin 15
+    // const float pi = 3.14f;
+    // float S = 0;
+    // float D = 0;
+    // float L = 0;
+    // puts("Введите значение");
+    // scanf("%f" , &S);
+    // D = sqrt(4*pi*S);
+    // L = pi * D;
+    // printf("D=%.2f\t\n L=%2.f", D, L );
+
+
+    // begin 16
+    // float x1 = 0;
+    // float x2 = 0;
+    // puts("Введите значение");
+    // scanf("%f %f" , &x1, &x2);
+    // printf("Модуль = %.2f\n", fabs(x2 - x1));
+
+
+
+    // begin 17
+    // float A = 0;
+    // float B = 0;
+    // float C = 0;
+    // float AC = 0;
+    // float BC = 0;
+    // puts("Введите значение");
+    // scanf("%f %f %f" , &A, &B, &C);
+    // AC = fabs(C-A);
+    // BC = fabs(C-B);
+    // printf("AC = %.2f\t\n BC=%.2f\t\n Сумма=%.2f", AC, BC , AC+BC);
+
+    // begin 18
+    // float A = 0;
+    // float B = 0;
+    // float C = 0;
+    // float AC = 0;
+    // float BC = 0;
+    // float times = 0;
+    // puts("Введите значение");
+    // scanf("%f %f %f", &A, &B, &C);
+    // AC = fabs(C-A);
+    // BC = fabs(C-B);
+    // times = AC * BC;
+    // printf(" AC=%.2f\t\n BC=%.2f\t\n Произведение равно AC И BC =%.2f", AC, BC, times);
+
+    // begin 19
+    // float x1 = 0; 
+    // float x2 = 0;
+    // float y1 = 0;
+    // float y2 = 0;
+    // float P = 0;
+    // float S = 0;
+    // puts("Введите значение x1\nВведите значение x2\nВведите значение y1\nВведите значение y2");
+    // scanf("%f %f %f %f", &x1, &x2, &y1, &y2);
+    // P =(fabs(x2-x1) + fabs(y2-y1))*2;
+    // S =fabs(x2-x1) * fabs(y2-y1);
+    // printf("P=%.2f\t\nS=%.2f", P, S);
+    
+// begin 20
+    // float x1 = 0;
+    // float x2 = 0;
+    // float y1 = 0;
+    // float y2 = 0;
+    // float distance = 0;
+    // puts("Введите значение x1\nВведите значение x2\nВведите значение y1\nВведите значение y2");
+    // scanf("%f %f %f %f", &x1, &x2, &y1, &y2);
+    // distance = sqrt(pow(fabs(x2-x1),2) + pow(fabs(y2-y1),2));
+    // printf("Distance = %.2f", distance);
+
+  
+    // begin 21
+    // float x1,x2,y1,y2,x3,y3 = 0 ;
+    // float p, S, a, b, c = 0;
+    // puts("Введите x1\nВведите y1\nВведите x2\nВведите y2\nВведите x3\nВведите y3");
+    // scanf("%f %f %f %f %f %f", &x1, &y1, &x2, &y2, &x3, &y3);
+    // a = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+    // c = sqrt(pow(x3 - x2, 2) + pow(y3 - y2, 2));
+    // b = sqrt(pow(x3 - x1, 2) + pow(y3 - y1, 2));
+    // p = (a+b+c)/2;
+    // S = sqrt(p*(p-a)*(p-b)*(p-c));
+    // printf("p=%.2f\t\nS=%.2f", S,p);
+
+  
+    // begin 22
+    // int a,b;
+    // scanf("%f %f", &a, &b);
+    // printf("%f\t%f\n", a,b);
+    // a = a^b;
+    // b = a^b;
+    // a = a^b;
+    // printf("%i\t%i\n", a,b);
+    // int a,b,c;
+    // puts("Введите значение для a\nВведите значение для b\nВведите значение для с");
+    // scanf("%i %i %i", &a, &b, &c);
+
+
+    // begin 23
+    // a= a+b+c;
+    // b=a-b-c;
+    // c=a-b-c;
+    // a=a-b-c;
+    // printf("%i\t%i\t%i", a,b,c);
+
+
+    // begin 24
+    // int A,B,C = 0;
+    // puts("Введите значение A\nВведите значение B\nВведение значение C");
+    // scanf("%i %i %i", &A,&B,&C);
+    // printf("%i,%i,%i", A, B, C);
+    // A = A+B+C;
+    // C = A-B-C;
+    // B = A-B-C;
+    // A = A-B-C;
+    // printf("%i,%i,%i ", A,B,C);
+
+
+    // begin 25
+    // float x = 0;
+    // float y = 0;
+    // puts("Введите значение для x");
+    // scanf("%f" , &x);
+    // y=3*pow(x, 6) - 6 * pow(x,2)-7;
+    // printf("y=%.2f",y);
+
+
+    // begin 27
+    // float A;
+    // scanf("%f", &A);
+    // A*=A;
+    // printf("%f", A);
+    // A*=A;
+    // printf("%f", A);
+    // A*=A;
+    // printf("%f", A);
+    
+
+    // begin 28
+    // float A,B,C;
+    // scanf("%f", &A);
+    // B = A*A;
+    // printf("%f\n", B);
+    // C = B*A;
+    // printf("%f\n", C);
+    // A = C*B;
+    // printf("%f\n", A);
+    // C = A*A;
+    // printf("%f\n", C);
+    // B = A*C;
+    // printf("%f\n", B);
+
+
+    // begin 29
+    // const float pi = 3.14f;
+    // float a = 0;
+    // puts("Введите значение");
+    // scanf("%f", &a);
+    // printf("Значение radians=%.2f", pi/180*a);
+
+  
+    // begin 30
+    // const float pi =3.14f;
+    // float radians = 0;
+    // float a =0;
+    // puts("Введите угол");
+    // scanf("%f", &radians);
+    // a = 180/pi*radians;
+    // printf("Значение a = %.2f", a);
+
+
+    // begin 31
+    // float Tf= 0;
+    // float Tc=0;
+    // puts("Введите температуру");
+    // scanf("%f", &Tf);
+    // Tc=(Tf-32)*5/9;
+    // printf("Tc=%.2f", Tc);
+
+
+    // begin 32
+    // float Tc=0;
+    // float Tf=0;
+    // puts("Введите температуру c");
+    // scanf("%f", &Tc);
+    // Tf=Tc*9/5+32;
+    // printf("Tf=%.2f", Tf);
+
+
+    // begin 33
+    // float x=0;
+    // float A=0;
+    // float Y=0;
+    // puts("Введите стоимость конфет");
+    // scanf("%f %f %f", &x, &A, &Y);
+    // printf("Стоимость кг конфет=%.2f", A/x *Y);
+
+  
+    // begin 34
+    // float x, a, y,b;
+    // scanf("%f %f %f %f", &x, &a, &y, &b);
+    // // 5 100 -> 20, 10 500 -> 50
+    // printf("Цена шоколадных конфет=%.2f\nКилограмм ирисок=%.2f\nРазница=%.2f", a/x, b/y, (a/x)/(b/y));
+
+
+    // begin 35
+    // float V,U,T1,T2,S;
+    // puts("Введите скорость в стоячей воде\nВведите скорость течения реки\nВведите время по течению воды\nВведите время против течения воды");
+    // scanf("%f %f %f %f", &V, &U, &T1, &T2);
+    // S = (V*T1)+((V-U)*T2);
+    // printf("s=%.2f", S);
+
+
+    // begin 36
+    // float V1,V2,S,T;
+    // puts("Введите 1 скорость\nВведите 2 скорост\nВведите расстояние\nВведите время");
+    // scanf("%f %f %f %f", &V1, &V2, &S, &T);
+    // printf("Расстояние=%.2f",S+(V1+V2)*T);
+
+
+    // begin 37
+    // float V1,V2,S,T;
+    //  puts("Введите 1 скорость\nВведите 2 скорост\nВведите расстояние\nВведите время");
+    // scanf("%f %f %f %f", &V1, &V2, &S, &T);
+    // printf("Расстояние=%.2f",fabs(S-(V1+V2)*T));
+
+
+    // begin 38
+    // float A,X,B;
+    // puts("Введите значение А\nВведите значение B");
+    // scanf("%f %f", &A,&B);
+    // printf("уравнение:=%.2f",X=-B/A);
+
+
+    // begin 39
+    // float a,b,c;
+    // float D=0;
+    // float x1,x2;
+    // puts("Введите значение А\nВведите значение B\nВведите значение C");
+    // scanf("%f %f %f", &a,&b,&c);
+    // D=pow(b,2) -4*a*c;
+    // printf("D=%.2f", D);
+    // x1=(-b-sqrt(D))/(2*a);
+    // printf("X1=%.2f", x1);
+    // x2=(-b+sqrt(D))/(2*a);
+    // printf("X2=%.2f", x2);
+
+// begin 40
+    // float A1,B1,C1,A2,B2,C2,D,x,y;
+    // puts("Введите значение A1\nВведите значение B1\nВведите значение C1\nВведите значение A2\nВведите значение B2\nВведите значение C2\n");
+    // scanf("%f %f %f %f %f %f", &A1, &B1, &C1, &A2, &B2, &C2);
+    // D=A1*B2-A2*B1;
+    // x=(C1*B2-C2*B1)/D;
+    // y=(A1*C2-A2*C1)/D;
+    // printf("x=%.2f\ny=%.2f", x,y);
