@@ -1,0 +1,435 @@
+#include <stdio.h>
+#include <math.h>
+#include <wchar.h>
+#include <locale.h>
+#include <time.h>
+#include <stdlib.h>
+void main(){
+ // 1
+    // int K,N;
+    // for(size_t i=0, N=(scanf("%i", &N))? N:0, K=(scanf("%i", &K))? K :0; i<N;printf("%i", K), i++);
+
+    // int N,K;
+    // N = K =0;
+    // scanf("%i %i", &N, &K);
+    // for (size_t i=0;i<N; i++){
+    //     printf("%i",K);
+    // }
+
+
+    // 2
+    // int A,B,N;
+    // A=B=N=0;
+    // scanf("%i %i", &A, &B);
+    // for(size_t i=A; i<=B; i++){
+    //     N++;
+    //     printf("%i", i); 
+    // }
+    // printf("%i", N);
+
+    // 3
+    // int A,B,N;
+    // A=B=N=0;
+    // scanf("%i %i", &A, &B);
+    // for(size_t i=B-1; i>A; i--){
+    //     N++;
+    //     printf("%i", i); 
+    // }
+    // printf("%i", N);
+
+
+    // 4
+    // int price=0;
+    // scanf("%i", &price);
+    // for(size_t i=1; i<=10; i++){
+    //     printf("%i", price*i);
+    // }
+
+    // 5
+    // float price=0;
+    // scanf("%f", &price);
+    // for(float i=1; i<=10; i++){
+    //     printf("%.2f", price*0.1*i);
+    // }
+
+    // 6
+    // float price=0;
+    // scanf("%f", &price);
+    // for(float i=1; i<=5; i++){
+    //     printf("%.2f", price*0.2*i);
+    // }
+
+    // 7
+    // int a,b,sum=0;
+    // scanf("%i %i", &a, &b);
+    // for(size_t i=a; i<=b; i++){
+    //     sum+=i;
+    //     printf("%i", sum);
+    // }
+
+    // 8
+    // int a,b;
+    // int sum=1;
+    // scanf("%i %i", &a, &b);
+    // for(size_t i=a; i<=b; i++){
+    //     sum*=i;
+    //     printf("%i", sum);
+    // }
+
+
+    // 9
+    // int a,b,sum=0;
+    // scanf("%i %i", &a, &b);
+    // for(size_t i=a; i<=b; i++){
+    //     sum+=i*i;
+    //     printf("%i", sum);
+    // }
+
+
+    // 10
+    // int N=0;
+    // float sum=0;
+    // scanf("%i", &N);
+    // for(float i=1; i<=N; i++){
+    //     sum=sum+1/i;
+    //     printf("%f\t",sum);
+    // }
+
+    // 11
+    // int N;
+    // int sum = 0;
+    // scanf("%i", &N);
+    // for(size_t i=0; i<= 2*N; i++){
+    //     sum+=pow(N+i,2);
+    // }
+    // printf("%i", sum);
+
+    // 12
+    // float N=0;
+    // float sum = 1;
+    // scanf("%f", &N);
+    // for(float i=1; i<=N; i++){
+    //     sum+=1.0 + 0.1 * i;
+    // }
+    // printf("%f", sum);
+
+
+    // 13
+    // float N;
+    // float sum=1;
+    // scanf("%f", &N);
+    // for(size_t i=1; i<=N; i++){
+    //     float tmp=1.0 + 0.1 * i;
+    //     (i%2==0)?sum+=tmp : (sum-=tmp);
+    // }
+    // printf("%.2f", sum);
+
+
+    // 14
+    // int N;
+    // int sum=0;
+    // scanf("%i", &N);
+    // for (size_t i=1; i<=pow(N,2); i++){
+    //     // sum+=
+    //     printf("%i", 2*i-1);
+    // }
+    
+
+    // 15
+    // float a,n;
+    // float result=1;
+    // scanf("%f %f", &a, &n);
+    // for(size_t i=1; i<=n; i++){
+    //     result *=  a;
+    // }
+    // printf("%.2f", result);
+
+
+
+    // 16
+    // int a;
+    // int n;
+    // int result= 1;
+    // scanf("%i %i", &a, &n);
+    // for(size_t i=1; i<=n; i++){
+    //     result *= a;
+    //     printf("%i", result);
+    // }
+
+
+    // 17
+//    int a,n;
+//     float sum=0;
+//     scanf("%i %i", &a, &n);
+//     for(size_t i=0; i<=n; i++){
+//         sum +=pow(a,i);
+//         printf("%f\t", sum);
+//     }
+
+
+    // 18
+    // unsigned char N;
+    // float A, sum = 1, step = 1;
+    // puts("Используя один цикл найти значение выражения 1 - A + A² - A³ + ... + (-1)ⁿ * Aⁿ\nВведите A и N: ");
+    // if (scanf("%f %hhu", &A, &N) != 2 || N <= 0) return; else for (unsigned char i = 0; i < N; i++, step *= -A, sum += step); printf("Значение выражения  1 - A + A² - A³ + ... + (-1)ⁿ Aⁿ = %.2f\n", sum);
+
+
+    // 19
+
+    // int n;
+    // int result = 1;
+    // scanf("%i", &n);
+    // for(size_t i=1; i<=n; i++){
+    //     result *=i;
+    // }
+    // printf("%i", result);
+
+    // 20
+    
+    // int N;
+    // int sum=0;
+    // int factorial = 1;
+    // scanf("%i", &N);
+    // for(size_t i=1; i<=N; i++){
+    //     factorial *=i;
+    //     sum += factorial;
+    // }
+    // printf("%i", sum);
+
+
+    // 21
+    // float N;
+    // float sum=1;
+    // float factorial = 1;
+    // scanf("%f", &N);
+    // for(size_t i=1; i<=N; i++){
+    //     factorial *= i;
+    //     sum += 1/factorial; 
+    // }
+    // printf("%f", sum);
+
+
+    // 22
+    // float x,n;
+    // float sum=1;
+    // float factorial= 1;
+    // scanf("%f %f", &x, &n);
+    // for(size_t i=1; i<=n; i++){
+    //     factorial *= i;
+    //     sum = 1+x+pow(x,2)/factorial+pow(x,3)/factorial+pow(x,n)/factorial;
+    // }
+    // printf("%f", sum);
+
+
+    // 23
+    // float N;
+    // float X;
+    // float factorial;
+    // float sum;
+    // scanf("%f %f", &N, &X);
+    // factorial = sum = X;
+    // for (unsigned char i = 1; i <= N; sum += (factorial = -(X* X) / ((2 * i) * (2 * i + 1))), i++); 
+    // printf("%f %f", sum, X);
+
+
+    // 24
+    // float x;
+    // float n;
+    // float sum = 1;
+    // float factorial= 1;
+    // scanf("%f %f", &x, &n);
+    // for (unsigned char i = 1; i <= n; sum += (factorial = (-(x*x)) / ((2 * i - 1) * (2 * i))), i++);
+    // printf("%f", sum);
+
+    // 25
+    // float x,n;
+    // float sum = 0;
+    // float sign = 1;
+    // float term;
+    // scanf("%f %f", &n, &x);
+    // term=x;
+    // for(size_t i=1; i<=n; i++){
+    //     sum = sum+sign*term/i;
+    //     term = term* x;
+    //     sign = -sign;
+    // }
+    // printf("%f", sum);
+
+
+    // 26
+    // float x,n;
+    // float sum =0;
+    // float sign = 1;
+    // float term;
+    // scanf("%f %f", &n, &x);
+    // term=x;
+    // for(size_t i=1; i<=n; i++){
+    //     sum = sum + sign * term/(2*i+1);
+    //     term = term*x*x;
+    //     sign=-sign;
+    // }
+    // printf("%f", sum);
+
+
+    // 28
+    // unsigned char N; 
+    // float tmp = 0, sum = 1, X;
+    // fputs("Найти выражение 1 + X/2 − 1·X²/(2·4) + 1·3·X³/(2·4·6) − … + (−1)ᴺ⁻¹·1·3·…·(2·N−3)·Xᴺ/(2·4·…·(2·N)), (1 + X)¹ᐟ²\nВведите N и X: ", stdout); 
+    // if (scanf("%hhu %f", &N, &X) != 2 || N <= 0  fabs(X) >= 1) return; else { sum += tmp = X / 2; for (unsigned char i = 2; i <= N; ++i, sum += (tmp = -(2*i - 3) * X / (2 * i))); }
+    // printf("Значение выражения 1 + X/2 − 1·X²/(2·4) + 1·3·X³/(2·4·6) − … + (−1)ᴺ⁻¹·1·3·…·(2·N−3)·Xᴺ/(2·4·…·(2·N)) = %.2f\n(1 + %.2f)¹ᐟ² = %.2f\n", sum, X, sqrt(1 + X)); // sqrt()/pow(, .5) need math -lm
+
+
+    // 29
+    // float N,A,B,x,H;
+    // scanf("%f %f %f", &N, &A, &B);
+    // H = (B - A)/N;
+    // printf("%f\t", H);
+    // for (size_t i=1;i<=N; i++){
+    //     x = A+i*H;
+    // }
+    // printf("%f\t", x);
+
+    // 29
+    // signed int N;
+    // float A,B,H;
+    // scanf("%i %f %f", &N, &A,&B);
+    // H=(B-A)/N;
+    // for (unsigned char i=0; i<=N; printf("%hhu точка = %.2f\n", i, A + i++*H));
+
+
+    // 30
+    // signed int N;
+    // float A,B,H;
+    // scanf("%i %f %f", &N, &A, &B);
+    // H = (B-A)/N;
+    // printf("H=%f\t", H);
+    // for (size_t i=0; i<=N; i++) {
+    //     float x = A+i*H;
+    //     float F = 1-sin(x);
+    //     printf("%f\t %f\t", x,F);
+    // }
+
+
+// 31
+    // float A = 2;
+    // int N;
+    // scanf("%i", &N);
+    // for (size_t k=1; k<=N; k++){
+    //     A = 2+1/A;
+    //     printf("%i %f", k, A);
+    // }
+
+    // 32
+    // float A =1;
+    // int N;
+    // scanf("%i", &N);
+    // for(size_t k=1; k<=N; k++){
+    //     A = (A+1)/k;
+    //     printf("%i %f",k, A);
+    // }
+
+    // 33
+    // int N;
+    // scanf("%i", &N);
+    // signed int F1 =1;
+    // signed int F2= 1;
+    // for(size_t k =3; k<=N; k++){
+    //     F2 = F1+F2;
+    //     F1= F2-F1;
+    //     printf("%i", F2);
+    // }
+
+
+    // 34
+    
+    // int N;
+    // float A1 = 1;
+    // float  A2 = 2;
+    // float Ak = 0 ;
+    // scanf("%i", &N);
+    // for(size_t K=3; K<=N; K++){
+    //     Ak = (A1 + 2 * A2) / 3;
+    //     A1=A2;
+    //     A2=Ak;
+    //     printf("%f\t", Ak);
+    // }
+
+
+    // 35
+    // float A1 = 1;
+    // float A2 = 2;
+    // float A3 = 3;
+    // int N;
+    // float Ak;
+    // scanf("%i", &N);
+    // for(size_t k=3; k<=N; k++){
+    //     Ak = A3+A2-2*A1;
+    //     A1=A2;
+    //     A2=A3;
+    //     A3=Ak;
+    //     printf("%f\t", Ak); 
+    // }
+
+
+    // 36
+    // int N,K;
+    // float sum = 0;
+    // scanf("%i %i", &N, &K);
+    // for (size_t i=1; i<=N; i++){
+    //     float x = 1;
+    //     for (size_t j=1; j<=K; j++){
+    //         x *= i;
+    //     }
+    //     sum +=x;
+    // }
+    // printf("%f", sum);
+
+
+    // 37
+    // int N;
+    // float sum=0;
+    // scanf("%i" , &N);
+    // for (size_t i=1; i<=N; i++){
+    //     float x =1;
+    //     for(size_t j=1; j<=i; j++){
+    //         x *=i;
+    //     }
+    //     sum += x;
+    // }
+    // printf("%f", sum);
+
+
+    // 38
+    // float N;
+    // float sum = 0;
+    // scanf("%f", &N);
+    // for(size_t i =1; i<=N; i++){
+    //     float x = 1;
+    //     for(size_t j = 0; j < N + 1 - i; j++){
+    //         x *= i;
+    // }
+    // sum += x;
+    // }
+    // printf("%f", sum);
+
+
+    // 39
+    // int A,B;
+    // scanf("%i %i",&A, &B);
+    // for(size_t i = A; i<=B; i++){
+    //     for(size_t j=1; j<=i; j++){
+    //         printf("%i", i);
+    //     }
+    // }
+
+    
+    // 40
+    // int A,B;
+    // scanf("%i %i", &A, &B);
+    // for(size_t i=A; i<=B; i++){
+    //     puts("");
+    //     for(size_t j = 1; j<=i-A+1; j++){
+    //         printf("%i\t", i);
+    //     }
+    // }
+}
