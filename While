@@ -1,0 +1,347 @@
+#include <stdio.h>
+#include <math.h>
+#include <wchar.h>
+#include <locale.h>
+#include <time.h>
+#include <stdlib.h>
+void main(){
+// 1
+    // int a,b;
+    // scanf("%i %i", &a, &b);
+    
+    // while(a>=b){
+    //     a-=b;
+    // }
+    // printf("%i", a);
+
+
+    // 2
+    // int a,b;
+    // int sum = 0;
+    // scanf("%i %i", &a, &b);
+    // while(a>=b) {
+    //     a=a-b;
+    //     sum++;
+    // }
+    // printf("%i", sum);
+
+
+    // 3
+    // int n,k;
+    // int sum = 0;
+    // scanf("%i %i", &n, &k);
+    // while(n>k){
+    //     n-=k;
+    //     sum++;
+    // }
+    // printf("%i %i", n ,sum);
+
+
+    // 4
+    // int n;
+    // scanf("%i", &n);
+    // while(n%3==0) n/=3;
+    // printf((n==1)? "true" : "false");
+
+    // 5
+    // int n;
+    // int k=0;
+    // scanf("%i", &n);
+    // while(n>1){
+    //     n/=2;
+    //     k++;
+    // }
+    // printf("%i", k);
+
+
+    // 6
+    // float n;
+    // float result = 1;
+    // scanf("%f", &n);
+    // while(n > 1){ 
+    //     result *= n;
+    //     n -=2;
+
+    // }
+    // printf("%f", result);
+
+    // 7
+    // float n;
+    // float k = 1;
+    // scanf("%f", &n);
+    // while (k*k <= n){
+    //     k++;
+    // }
+    // printf("%f", k);
+
+
+    // 8
+    // float n;
+    // float k = 1;
+    // scanf("%f", &n);
+    // while ((k+1) *(k+1) <= n){
+    //     k++;
+    // }
+    // printf("%f", k);
+
+
+    // 9
+    // int n;
+    // int k = 0;
+    // int number = 1;
+    // scanf("%i", &n);
+    // while (number<=n) k++ , number *=3;
+    // printf("%i",k);
+
+    // 10
+    // int n;
+    // int k = 0;
+    // int number = 1;
+    // scanf("%i", &n);
+    // while (number>=n) k++ , number *=3;
+    // printf("%i",k-1);
+
+
+    // 11
+    // int n;
+    // int k = 0;
+    // int sum = 0;
+    // scanf("%i", &n);
+    // while (sum < n){
+    //     sum +=++k;
+    // }
+    // printf("%i\t %i\t", sum,k);
+
+
+    // 12
+    // int n;
+    // int k = 0;
+    // int sum = 0;
+    // scanf("%i", &n);
+    // while(sum + k+1 < n){
+    //     sum +=++k;
+    // }
+    // printf("%i\t %i\t", sum, k);
+
+    // 13
+    // int a;
+    // int k = 0;
+    // float sum = 0;
+    // scanf("%i", &a);
+    // while(sum <= a){
+    //     k++;
+    //     sum += 1.0/k;
+    // }
+    // printf("%f", sum);
+
+    // 14
+    // int a;
+    // int k =0;
+    // float sum = 0;
+    // scanf("%i", &a);
+    // while(sum + 1.0/(k+1) <a){
+    //     k++;
+    //     sum += 1.0/k;
+    // }
+    // printf("%f", sum);
+    
+
+    // 15
+    // float S = 1000;
+    // int P = 0;
+    // int k = 0;
+    // scanf("%i", &P);
+    // while(S<=1100){
+    //     S += S * P / 100;
+    //     k++;
+    // }
+    // printf("%i\t %f\t", k, S);
+
+
+
+    // 16
+    // float S = 0;
+    // float disance = 10;
+    // float k = 0;
+    // float P = 0;
+    // scanf("%f", &P);
+    // while(S<=200){
+    //     disance = disance * (1 + P/100.0);
+    //     S += disance;
+    //     k++;
+    // }
+    // printf("%f %f",S ,k);
+
+
+    // 17
+    // int a;
+    // scanf("%i", &a);
+    // while (a>0){
+    //     printf("%i\t", a%10);
+    //     a = a/10;
+    // }
+
+
+    // 18
+    // int a;
+    // float sum = 0;
+    // int k =0;
+    // scanf("%i", &a);
+    // while(a>0){
+    //     k++;
+    //     sum += a%10;
+    //     a = a / 10;
+    // }
+    //   printf("%i\t %f\t", k, sum);
+
+    // 19
+    // int n;
+    // int k = 0;
+    // scanf("%i", &n);
+    // while(n>0){
+    //     k = k * 10 + n % 10;
+    //     n /= 10;
+    // }
+    // printf("%i", k);
+
+
+    // 20
+    // int a;
+    // int k;
+    // _Bool twodigit = 0;
+    // scanf("%i", &a);
+    // while(a > 0 && twodigit == 0){
+    //     a/=10;
+    //     twodigit = a%10 == 2 ? 1 : 0;
+    
+    // }
+    // printf(twodigit == 0 ? "False" : "True");
+
+
+    // 21
+    // int a;
+    // int k;
+    // _Bool twodigit = 0;
+    // scanf("%i", &a);
+    // while (a>0){    
+    //     twodigit = (a % 10) %2 !=0;  
+    //     a/=10;
+    // }
+    // printf(twodigit ? "true" : "false");
+
+
+    // 22
+    // int a;
+    // int number = 2;
+    // _Bool twodigit = 0;
+    // scanf("%i", &a);
+    // while (number* number <=a){
+    //     if(a%number++==0){
+    //         puts("false");
+    //         return;
+    //     }
+    // }
+    // puts("true");
+
+
+
+    // 23
+
+    // int a,b;
+    // if (scanf("%i %i", &a, &b)!=2)return;
+    // else while(a!=0 && b !=0)(a>b)?(a=a%b):(b=b%a);
+    // printf("НОД=%i\n", a+b);
+
+
+    // 24
+// float Fk;
+//     int n;
+//     float F1 =  1;
+//     float F2 = 2;
+//     scanf("%i", &n);
+//     while(Fk < n){
+//         Fk = F1+F2;
+//         F1= F2;
+//         F2=Fk;
+//     }
+//     printf(Fk==n ? "true" : "false");
+
+
+// 25
+    // float Fk;
+    // int n;
+    // float F1 = 1;
+    // float F2 = 1;
+    // scanf("%i", &n);
+    // while(Fk <=n){
+    //     Fk = F1+F2;
+    //     F1= F2;
+    //     F2=Fk;
+    // }
+    // printf("%f", Fk);
+
+
+    // 26
+    // float Fk;
+    // int n;
+    // float F1 = 1;
+    // float F2 = 1;
+    // scanf("%i", &n);
+    // while(Fk <=n){
+    //     Fk = F1+F2;
+    //     F1= F2;
+    //     F2=Fk;
+    // }
+    //  Fk =F1+F2;
+    // printf("%f %f", Fk-10,Fk-F1);
+
+
+
+    // 27
+    // float Fk;
+    // int k = 3;
+    // int n;
+    // float F1 = 1;
+    // float F2 = 1;
+    // scanf("%i", &n);
+    // while(Fk <=n){
+    //     Fk = F1+F2;
+    //     F1= F2;
+    //     F2=Fk;
+    //     k++;
+    // }
+    // printf("%i", k);
+
+
+
+    // 28
+    // float epsilon = scanf("%f", &epsilon)? epsilon:0, A1 = 2, Ak = 2+ 1.f/ A1;
+    // unsigned char K = 1;
+    // while(fabs(Ak-A1) >= epsilon) A1 = Ak, Ak= 2.f + 1.f/ A1, K++;
+    // printf("k=%hhu\tAk-1 = %.2f\tAk=%.2f\n", K, A1, Ak);
+
+
+    // 29
+//   float a1 = 1;
+//     float a2 = 2;
+//     float k = 1;
+//     float Ak, epsilon;
+//     scanf("%f", &epsilon);
+//     Ak=(a1+2 * a2)/3;
+//     while(fabs(Ak-a2)>=epsilon){
+//         a1 = a2;
+//         a2 = Ak;
+//         Ak=(a1+2 * a2)/3;
+//         k++;
+//     }
+//     printf("%f", k);
+
+
+    // 30
+    // int a,b,c;
+    // int sum = 0;
+    // scanf("%i %i %i", &a, &b, &c);
+    // sum = ((a/c) * (b/c));
+    // printf("%i",sum);
+
+}
